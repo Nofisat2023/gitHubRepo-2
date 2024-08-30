@@ -1,0 +1,75 @@
+/* NavBar.module.css */
+
+nav {
+    background: linear-gradient(to right, #6a1b9a, #ad69c0); /* Linear gradient with purple shades */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Align items horizontally */
+    gap: 20px; /* Space between items */
+  }
+  
+nav  li .li {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a.active {
+    font-weight: bold;
+  }
+  
+  .homeLink {
+    margin-right: auto;
+    font-size: 30px;
+  }
+  
+  /* .li {
+    display: flex;
+    justify-content: flex-end;
+    text-align: end;
+  } */
+  
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .nav {
+      flex-direction: column; /* Stack items vertically on small screens */
+    }
+  
+    .ul {
+      flex-direction: column; /* Stack list items vertically on small screens */
+    }
+  
+    .li {
+      margin-right: 0;
+      margin-bottom: 10px; /* Add space between items on small screens */
+    }
+  
+    .homeLink {
+      margin-left: 0; /* Remove margin for Home link */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav {
+      padding: 5px; /* Reduce padding on very small screens */
+    }
+  
+    .a {
+      font-size: 14px; /* Adjust font size for small screens */
+    }
+  }
+  
